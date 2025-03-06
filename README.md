@@ -24,7 +24,7 @@ pip install pandas numpy scikit-learn tensorflow tabulate
 
 ### 2️⃣ Clone Repository
 ```bash
-git clone https://github.com/your-repo/house-price-prediction.git
+git clone https://github.com/Phinix-Morgan/house-price-prediction.git
 cd house-price-prediction
 ```
 
@@ -109,12 +109,4 @@ files.download("house_price_model.pkl")
 ---
 ## 🤝 Contributing
 Feel free to **fork** this repository and submit **pull requests**. Any improvements, feature additions, or bug fixes are welcome!
-
----
-## 📜 License
-This project is licensed under the **MIT License**. See the LICENSE file for details.
-
----
-## 📧 Contact
-For any queries, reach out at [your-email@example.com](mailto:your-email@example.com).
 
