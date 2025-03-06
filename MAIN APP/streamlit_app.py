@@ -4,7 +4,28 @@ import numpy as np
 import pandas as pd
 
 # Load trained model
-final_model = pickle.load(open("house_price_model_kaggle.pkl", "rb"))
+# final_model = pickle.load(open("house_price_model_kaggle.pkl", "rb"))
+
+
+
+import os
+import pickle
+
+# Get the directory where the script (streamlit_app.py) is located
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Construct the path to the model file relative to the script
+model_path = os.path.join(script_dir, "house_price_model_kaggle.pkl")
+
+# Check if the file exists before loading
+if not os.path.exists(model_path):
+    raise FileNotFoundError(f"Model file not found at {model_path}")
+else:
+    final_model = pickle.load(open(model_path, "rb"))
+
+
+
+
 
 st.title("🏡 House Price Prediction App Kaggle ")
 	
